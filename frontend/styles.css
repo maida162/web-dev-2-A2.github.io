@@ -1,0 +1,232 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #4b3832;
+    background-color: #f3e9dc;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #8e5a37;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    margin-top: 0.5rem;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ff9100a4;
+}
+
+/* Home Section */
+.home {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: url('home.jpg') no-repeat center center/cover;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.home img {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+/* Coffee Menu Section */
+.coffee-menu {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.coffee-menu h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.menu-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 1rem;
+}
+
+.menu-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+}
+
+.about-us h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.about-us p {
+    line-height: 1.8;
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: justify;
+    color: #4b3832;
+}
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+/* Authentication Section */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+nav {
+    background-color: #8e5a37;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #4b3832;
+    border-radius: 5px;
+}
+
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8e5a37;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #3c2313;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: #8e5a37;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home h2 {
+        font-size: 2rem;
+    }
+
+    .menu-item img {
+        height: auto;
+    }
+}
+
+
+

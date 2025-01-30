@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Coffee Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Everyday Coffee</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About Us</a>
+            <a href="#" data-page="signup">Sign Up</a>
+            <a href="#" data-page="login">Login</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home">
+            <h2>Welcome to Everyday Coffee</h2>
+            <p>Your cozy spot for freshly brewed coffee.</p>
+            <img src="home.jpg" alt="Coffee shop image">
+        </section>
+
+        <!-- Coffee Menu Section -->
+        <section id="menu" class="coffee-menu">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="espresso.jpg" alt="Espresso">
+                    <h3>Espresso</h3>
+                    <p>Rich and bold flavor in every sip.</p>
+                    <p>$20</p>
+                </div>
+                <div class="menu-item">
+                    <img src="latte.jpg" alt="Latte">
+                    <h3>Latte</h3>
+                    <p>Perfect balance of espresso and milk.</p>
+                    <p>$25</p>
+                </div>
+                <div class="menu-item">
+                    <img src="cappuccino.jpg" alt="Cappuccino">
+                    <h3>Cappuccino</h3>
+                    <p>Foamy and delicious coffee experience.</p>
+                    <p>$30</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-us">
+            <h2>About Us</h2>
+            <p>
+                At Everyday Coffee, we are passionate about crafting the perfect cup of coffee for every occasion. Our journey began with a simple mission: to bring people together over the love of exceptional coffee. From sourcing the finest beans around the world to roasting them to perfection, every step of our process is guided by a commitment to quality and sustainability.
+                <br><br>
+                Our cozy coffee shop is more than just a place to grab a drink – it’s a community where friends meet, ideas are shared, and moments are celebrated. Whether you’re looking for a strong and bold espresso, a creamy latte, or a perfectly foamy cappuccino, we’ve got you covered. We also offer a variety of locally baked treats to complement your coffee experience.
+                <br><br>
+                Every day, we strive to create a welcoming atmosphere where our customers feel at home. Our friendly baristas are always ready to help you discover your new favorite drink or share their knowledge about coffee. So come in, relax, and let us make your day brighter, one cup at a time.
+            </p>
+        </section>
+
+        <!-- Authentication Section -->
+        <section id="auth" class="auth-section">
+            <h2>Sign Up / Log In</h2>
+            <div class="auth-forms">
+         <!-- Signup Page -->
+         <div id="signup" class="page hidden">
+            <div class="form-container">
+                <h2>Sign Up</h2>
+                <input type="text" id="signup-name" placeholder="Enter your name" required>
+                <input type="email" id="signup-email" placeholder="Enter your email" required>
+                <input type="password" id="signup-password" placeholder="Enter your password" required>
+                <button id="signup-btn">Sign Up</button>
+                <p id="signup-error" style="color: red; display: none;">Please fill in all fields.</p>
+            </div>
+        </div>
+
+        <!-- Login Page -->
+        <div id="login" class="page hidden">
+            <div class="form-container">
+                <h2>Login</h2>
+                <input type="email" id="login-email" placeholder="Enter your email" required>
+                <input type="password" id="login-password" placeholder="Enter your password" required>
+                <button id="login-btn">Login</button>
+                <p id="login-error" style="color: red; display: none;">Invalid email or password.</p>
+            </div>
+        </div>
+    </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Everyday Coffee</p>
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>
